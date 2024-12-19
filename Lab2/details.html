@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="details.css">
+    <title>Shirts details</title>
+</head>
+<body>
+<main>
+    <header>
+        <h1 id="shirt-title"></h1>
+        <button id="exit" onclick="goBack()">Назад</button>
+    </header>
+    <div class="shirt-container">
+        <img id="shirt-image" src="" alt="Футболка" style="max-width: 100%; height: auto;">
+        <div class="shirt-info">
+            <p id="shirt-price"></p>
+            <p id="shirt-description"></p>
+            <div>
+                <div class="button-wrapper">
+                    <span>Side: </span>
+                    <button id="front-button">Front</button>
+                    <button id="back-button">Back</button>
+                </div>
+                <br>
+                <div id="colors" class="button-wrapper">
+                    <span>Color: </span>
+                    <div id="color-buttons"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</main>
+<script src="shirts.js"></script>
+<script src="details.js"></script>
+</body>
+</html>

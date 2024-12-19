@@ -1,0 +1,45 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main{
+    width: 80%;
+    margin: auto;
+}
+.shirt-container{
+    display: flex;
+    gap: 24px;
+}
+.button-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.button-wrapper span{
+     margin-right: 4px;
+}
+button{
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 0 6px 2px rgba(34, 60, 80, 0.2);
+    transition-duration: 0.2s;
+}
+button:hover{
+    box-shadow: 0 0 6px 2px rgba(34, 60, 80, 0.2) inset;
+}
+#color-buttons{
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+#exit{
+    height: 36px;
+}
+
+@media (max-width: 700px) {
+    .shirt-container{
+        flex-direction: column;
+    }
+}

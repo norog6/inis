@@ -1,0 +1,140 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+}
+main {
+    width: 80%;
+}
+h1 {
+    text-align: center;
+}
+.shirt-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+.T-shirt {
+    background-color: #ffffff;
+    padding: 10px;
+    text-align: left;
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px 2px rgba(34, 60, 80, 0.2);
+    transition-duration: 0.2s;
+}
+.T-shirt:hover{
+    box-shadow: 0 0 24px 6px rgb(255, 105, 105);
+    transform: scale(1.008);
+}
+.T-shirt h2{
+    font-size: 18px;
+}
+.T-shirt p{
+    font-size: 12px;
+}
+.T-shirt img {
+    max-width: 100%;
+    height: auto;
+}
+.T-shirt .button-wrapper{
+    display: flex;
+    justify-content: space-evenly;
+}
+.button-wrapper button {
+    margin: 4px;
+    padding: 12px;
+    background-color: #545454;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 12px;
+    transition-duration: 0.2s;
+}
+.button-wrapper button:hover {
+    background-color: #272626;
+    transform: scale(1.08);
+}
+#popup-background{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100dvw;
+    height: 100dvh;
+    background-color: rgba(0, 0, 0, 0.64);
+}
+#popup-content {
+    display: flex;
+    gap: 24px;
+    background-color: #f1f1f1;
+    padding: 24px;
+    width: 80%;
+    max-width: 1000px;
+    border-radius: 12px;
+    position: relative;
+    box-shadow: 8px 8px 12px 8px rgb(17 30 40 / 26%);
+}
+#popup-content img {
+    display: block;
+    margin: 5px auto;
+    max-width: 100%;
+    height: auto;
+}
+#popup-content h3{
+    margin-left: 24px;
+    text-align: left;
+}
+#popup-content #popup-description {
+    text-indent: 24px;
+    text-align: justify;
+}
+#popup-content #popup-price {
+    text-align: left;
+}
+.close {
+    color: #aaa;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+    #popup-content {
+        flex-direction: column;
+        background-color: #f1f1f1;
+        padding: 20px;
+        width: 80%;
+        max-width: 500px;
+        border-radius: 10px;
+        position: relative;
+    }
+    #popup-content img {
+        display: block;
+        margin: 5px auto;
+    }
+    #popup-content h3,
+    #popup-content p {
+        margin-left: 0;
+        text-align: center;
+    }
+    #popup-content #popup-price {
+        text-align: center;
+    }
+}
